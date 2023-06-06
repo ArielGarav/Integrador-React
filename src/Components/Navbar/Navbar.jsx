@@ -20,7 +20,7 @@ import { useNavigate } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleHiddenMenu } from "../../redux/user/userSlice";
 import ModalUser from "./ModalUser/ModalUser";
-
+import Logo from "../../../src/assets/logos/STYLESHOES.png";
 const Navbar = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <NavMenu>
-        <LogoImg src="/src/assets/logos/STYLESHOES.png" alt="logo" />
+        <LogoImg src={Logo} alt="logo" />
         <NavContainer
           click={click}
           onClick={() => {

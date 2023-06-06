@@ -21,7 +21,7 @@ const HomeCenter = () => {
             <ImageProductGalleryFirst
               className=".materialboxed"
               src="/src/assets/Nike Air Max Plus III/1.jpg"
-              alt="github-hoodie"
+              alt=""
             />
           </a>
         </ContainerImageProductGallery>
