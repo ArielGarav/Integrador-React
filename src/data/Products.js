@@ -4,7 +4,7 @@ export const products = [
     nombre: "Nike Air Max Plus III",
     category: "Men",
     precio: 179.99,
-    img: "src/assets/objets/zapas objet/hombres/Nike_Air_Max_Plus_III.png",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686084520/Nike_Air_Max_Plus_III_tdcide.png",
   },
   {
     id: 2,
