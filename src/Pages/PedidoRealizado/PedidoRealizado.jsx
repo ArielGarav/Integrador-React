@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import Button from "../../components/UI/Button/Button";
+import Button from "../../Components/UI/Button/Button";
 
 import {
   ContainerInfoStyled,
