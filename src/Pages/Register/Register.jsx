@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 
-import LoginInput from "../../components/UI/LoginInput/LoginInput";
+import LoginInput from "../../Components/UI/LoginInput/LoginInput";
 import Submit from "../../Components/UI/Submit/Submit";
 
 import { Form, LoginContainerStyled, LoginEmailStyled } from "./RegisterStyles";
