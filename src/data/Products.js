@@ -129,28 +129,28 @@ export const products = [
     nombre: "Nike Air Max Plus FFF",
     category: "Outlet",
     precio: 189.99,
-    img: "src/assets/objets/zapas objet/Outlet/Nike_Air_Max_Plus_FFF.png",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686087069/Zapatillas%20Products/Outlet/sp8uytnezhacrvzfercl.png",
   },
   {
     id: 19,
     nombre: "Nike Air Tuned Max",
     category: "Outlet",
     precio: 110.47,
-    img: "src/assets/objets/zapas objet/Outlet/Nike Air Tuned Max.png",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686087068/Zapatillas%20Products/Outlet/ekblsy9xxnkv3eeswboz.png",
   },
   {
     id: 20,
     nombre: "Nike Metcon 8",
     category: "Outlet",
     precio: 129.99,
-    img: "src/assets/objets/zapas objet/Outlet/Nike_Metcon_8.png",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686087069/Zapatillas%20Products/Outlet/kznjxbghvhegrsgx6bdj.png",
   },
   {
     id: 21,
     nombre: "Jordan Series",
     category: "Outlet",
     precio: 64.99,
-    img: "src/assets/objets/zapas objet/Outlet/Jordan_Series.png",
+    img: "https://console.cloudinary.com/console/c-3e99af5c137d7729b95f5f06cc0c57/media-explorer/Zapatillas%20Products/Outlet?assetId=e1a1baa227d718f7eed69aeb0da54fc3",
   },
 ];
 
