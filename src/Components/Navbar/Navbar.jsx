@@ -13,7 +13,7 @@ import {
 } from "./NavbarStyles";
 
 import { FaUserAlt, FaHome, FaBars, FaTimes } from "react-icons/fa";
-
+import Logo from "./../../assets/logos/STYLESHOES.png";
 import CartIcon from "./CartIcon/CartIcon";
 import ModalCart from "./ModalCart/ModalCart";
 import { useNavigate } from "react-router";
@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <>
       <NavMenu>
-        <LogoImg src="../src/assets/logos/STYLESHOES.png" alt="logo" />
+        <LogoImg src={Logo} alt="logo" />
         <NavContainer
           click={click}
           onClick={() => {
