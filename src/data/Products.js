@@ -150,7 +150,7 @@ export const products = [
     nombre: "Jordan Series",
     category: "Outlet",
     precio: 64.99,
-    img: "https://console.cloudinary.com/console/c-3e99af5c137d7729b95f5f06cc0c57/media-explorer/Zapatillas%20Products/Outlet?assetId=e1a1baa227d718f7eed69aeb0da54fc3",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686087068/Zapatillas%20Products/Outlet/ocrzmvo1qoszlvlauyc8.png",
   },
 ];
 
