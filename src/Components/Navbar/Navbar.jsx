@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <>
       <NavMenu>
-        <LogoImg src="/src/assets/logos/STYLESHOES.png" alt="" />
+        <LogoImg src="/src/assets/logos/STYLESHOES.png" alt="logo" />
         <NavContainer
           click={click}
           onClick={() => {
