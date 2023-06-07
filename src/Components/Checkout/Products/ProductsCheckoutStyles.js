@@ -44,7 +44,7 @@ export const CardsWrapperStyled = styled.div`
   }
 
   &::-webkit-scrollbar-thumb {
-    background: var(--gray-bg);
+    background: white;
     border-radius: 5px;
   }
 

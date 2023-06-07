@@ -20,7 +20,7 @@ export const Form = styled(FormikForm)`
 `;
 
 export const LoginEmailStyled = styled.p`
-  color: var(--orange);
+  color: white;
 
   :hover {
     text-decoration: underline;

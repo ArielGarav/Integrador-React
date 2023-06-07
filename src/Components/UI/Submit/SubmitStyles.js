@@ -6,7 +6,7 @@ export const ButtonSubmitStyled = styled(motion.button)`
   outline: none;
   border: none;
   border-radius: 10px;
-  background: var(--btn-gradient);
+  background: transparent;
   color: white;
   text-transform: uppercase;
   font-weight: 400;

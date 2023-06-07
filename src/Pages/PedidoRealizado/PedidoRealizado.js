@@ -9,7 +9,7 @@ export const TextStyled = styled.div`
 `;
 
 export const TitleStyled = styled.h1`
-  background: var(--btn-gradient);
+  background: transparent;
   -webkit-text-fill-color: transparent;
 `;
 

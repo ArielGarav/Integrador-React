@@ -2,7 +2,6 @@ import React from "react";
 
 import Input from "../../UI/Input/Input";
 import Submit from "../../UI/Submit/Submit";
-
 import { CheckoutDatosStyled, Formik, Form } from "./CheckoutFormStyles";
 import { checkoutInitialValues } from "../../../formik/initialValues";
 import { checkoutValidationSchema } from "../../../formik/validationSchema";

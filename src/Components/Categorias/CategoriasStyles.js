@@ -16,9 +16,7 @@ export const CardCategoria = styled(motion.div)`
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-
   padding: 2rem 0.5rem;
-
   border-radius: 15px;
   cursor: pointer;
 
@@ -37,6 +35,5 @@ export const CardCategoria = styled(motion.div)`
 export const BorderDecoration = styled.div`
   height: 5px;
   width: 30%;
-  background: var(--btn-gradient);
   border-radius: 15px;
 `;

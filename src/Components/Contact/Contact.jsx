@@ -23,32 +23,32 @@ const Contact = () => {
         <ContactContainer>
           <TextContact>Contacto</TextContact>
           <LinksStlyedRedes
-            href="https://www.facebook.com/Sociales.Sociales"
+            href="https://www.whatsapp.com/?lang=es"
             target="_blank"
           >
             <AiOutlineWhatsApp />
           </LinksStlyedRedes>
 
           <LinksStlyedRedes
-            href="https://www.facebook.com/Sociales.Sociales"
+            href="https://www.facebook.com/ariel.garaventa/"
             target="_blank"
           >
             <AiFillFacebook />
           </LinksStlyedRedes>
           <LinksStlyedRedes
-            href="https://www.instagram.com/sociales.sociales/"
+            href="https://www.instagram.com/ariel_garav_/"
             target="_blank"
           >
             <AiOutlineInstagram />
           </LinksStlyedRedes>
           <LinksStlyedRedes
-            href="https://twitter.com/SocialesSociales"
+            href="https://twitter.com/Arielgarav?t=-nwmYYRkZZP7rK7knXtMoA&s=08"
             target="_blank"
           >
             <AiOutlineTwitter />
           </LinksStlyedRedes>
           <LinksStlyedRedes
-            href="https://www.linkedin.com/company/sociales-sociales/"
+            href="https://www.linkedin.com/in/ariel-garaventa-349361274/"
             target="_blank"
           >
             <AiOutlineLinkedin />

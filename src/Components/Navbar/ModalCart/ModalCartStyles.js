@@ -38,7 +38,7 @@ export const CloseButtonStyled = styled(motion.button)`
   outline: none;
   border: none;
   border-radius: 10px;
-  background: var(--btn-gradient);
+  background: transparent;
   color: white;
   cursor: pointer;
 `;
@@ -73,7 +73,8 @@ export const ProductsWrapperStyled = styled.div`
   overflow: scroll;
 
   &::-webkit-scrollbar {
-    background: transparent;
+    background: white;
+    width: 5px;
   }
 
   &::-webkit-scrollbar:horizontal {

@@ -22,7 +22,7 @@ export const Form = styled(FormikForm)`
 
 export const LoginEmailStyled = styled(Link)`
   & p {
-    color: red;
+    color: white;
     font-size: 17px;
 
     :hover {

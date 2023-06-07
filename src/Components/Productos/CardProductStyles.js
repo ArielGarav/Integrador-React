@@ -17,6 +17,7 @@ export const CardAvailable = styled.div`
   background: #ffce00;
   border-radius: 20px;
   overflow: hidden;
+  border: 1px solid white;
 
   &::before {
     content: "";

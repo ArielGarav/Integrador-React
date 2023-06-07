@@ -7,7 +7,6 @@ const Shop = () => {
   return (
     <>
       <CardsRecomendaciones />
-
       <Categorias />
       <CardsProductos />
     </>
