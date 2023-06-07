@@ -50,7 +50,9 @@ export const LightBox = styled.article`
     width: 30vw;
   }
   @media (max-width: 550px) {
-    width: 200px;
+    img {
+      width: 200px;
+    }
   }
 
   &:target {
@@ -69,6 +71,10 @@ export const Close = styled.a`
   right: 30rem;
   font-size: 4rem;
   color: #fff;
+  @media (max-width: 550px) {
+    top: 100px;
+    right: 15rem;
+  }
   &:hover {
     color: #fcde03;
   }
