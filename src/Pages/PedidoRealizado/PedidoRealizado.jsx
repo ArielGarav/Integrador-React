@@ -14,7 +14,7 @@ const PedidoRealizado = () => {
     <div>
       <TextStyled>
         <img
-          src="/src/assets/iconos/success-200x200.jpg.pagespeed.ce.S2kJWBbCGK-removebg-preview.png"
+          src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129349/Colores%20Integrador%20React/Pedido%20Realizado%20Imagenes/success-200x200.jpg.pagespeed.ce.S2kJWBbCGK-removebg-preview_gw1wlt.png"
           alt=""
         />
         <ContainerInfoStyled>

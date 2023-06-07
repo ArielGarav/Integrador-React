@@ -19,7 +19,7 @@ const HomeCenter = () => {
         <ContainerImageProductGallery>
           <a href="#image1">
             <ImageProductGalleryFirst
-              src="/src/assets/Nike Air Max Plus III/1.jpg"
+              src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129127/Colores%20Integrador%20React/galleria%20nike%20home/1_j7iuee.png"
               alt=""
             />
           </a>
@@ -27,25 +27,25 @@ const HomeCenter = () => {
         <ContainerImageProductGallery>
           <a href="#image2">
             <ImageProductGallery
-              src="/src/assets/Nike Air Max Plus III/2.jpg"
+              src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129126/Colores%20Integrador%20React/galleria%20nike%20home/2_uvq0hv.png"
               alt=""
             />
           </a>
           <a href="#image3">
             <ImageProductGallery
-              src="/src/assets/Nike Air Max Plus III/3.jpg"
+              src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129127/Colores%20Integrador%20React/galleria%20nike%20home/3_w1eg8p.png"
               alt=""
             />
           </a>
           <a href="#image4">
             <ImageProductGallery
-              src="/src/assets/Nike Air Max Plus III/4.jpg"
+              src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129128/Colores%20Integrador%20React/galleria%20nike%20home/4_w0vgpb.png"
               alt=""
             />
           </a>
           <a href="#image5">
             <ImageProductGallery
-              src="/src/assets/Nike Air Max Plus III/5.jpg"
+              src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129128/Colores%20Integrador%20React/galleria%20nike%20home/5_qpjvmq.png"
               alt=""
             />
           </a>
@@ -55,7 +55,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="/src/assets/Nike Air Max Plus III/1.jpg"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129126/Colores%20Integrador%20React/galleria%20nike%20home/2_uvq0hv.png"
             alt=""
           />
           <Next href="#image2" className="next">
@@ -70,7 +70,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="/src/assets/Nike Air Max Plus III/2.jpg"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129126/Colores%20Integrador%20React/galleria%20nike%20home/2_uvq0hv.png"
             alt=""
           />
           <Next href="#image3" className="next">
@@ -85,7 +85,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="/src/assets/Nike Air Max Plus III/3.jpg"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129127/Colores%20Integrador%20React/galleria%20nike%20home/3_w1eg8p.png"
             alt=""
           />
           <Next href="#image4" className="next">
@@ -100,7 +100,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="/src/assets/Nike Air Max Plus III/4.jpg"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129128/Colores%20Integrador%20React/galleria%20nike%20home/4_w0vgpb.png"
             alt=""
           />
           <Next href="#image5" className="next">
@@ -115,7 +115,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="/src/assets/Nike Air Max Plus III/5.jpg"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129128/Colores%20Integrador%20React/galleria%20nike%20home/5_qpjvmq.png"
             alt=""
           />
           <Next href="#image1" class="next">
