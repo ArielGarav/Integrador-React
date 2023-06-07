@@ -38,9 +38,18 @@ const HomeDer = () => {
         <hr />
         <SuggestionSubheading>Colores Disponibles</SuggestionSubheading>
         <ColorContainer>
-          <ColorImage src="src/assets/colores/rojo.jpg" alt=" color rojo" />
-          <ColorImage src="src/assets/colores/gris.jpg" alt=" color gris" />
-          <ColorImage src="src/assets/colores/blanco.jpg" alt="color blanco" />
+          <ColorImage
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128718/Colores%20Integrador%20React/rojo_gdhvbp.jpg"
+            alt=" color rojo"
+          />
+          <ColorImage
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128718/Colores%20Integrador%20React/gris_yzbgeb.png"
+            alt=" color gris"
+          />
+          <ColorImage
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128718/Colores%20Integrador%20React/blanco_x2spo1.png"
+            alt="color blanco"
+          />
         </ColorContainer>
         <hr />
         <SuggestionDescription>
