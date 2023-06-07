@@ -19,15 +19,15 @@ const HomeDer = () => {
     <RecommendationContainer>
       <Slider>
         <SimilarImage
-          src="src/assets/sugerencias/Men's Jordan 1 Mid/1.jpg"
+          src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128972/Colores%20Integrador%20React/Sugerencia%20imagenes/1_eshspe.png"
           alt=""
         />
         <SimilarImage
-          src="src/assets/sugerencias/Men's Jordan 1 Mid/2.jpg"
+          src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128973/Colores%20Integrador%20React/Sugerencia%20imagenes/2_ebqy0o.png"
           alt=""
         />
         <SimilarImage
-          src="src/assets/sugerencias/Men's Jordan 1 Mid/3.jpg"
+          src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128973/Colores%20Integrador%20React/Sugerencia%20imagenes/3_lwp3v5.png"
           alt=""
         />
       </Slider>
