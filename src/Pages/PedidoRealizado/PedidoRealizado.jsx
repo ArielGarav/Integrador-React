@@ -1,6 +1,5 @@
 import { useNavigate } from "react-router-dom";
 import Confetti from "react-confetti";
-
 import Button from "../../Components/UI/Button/Button";
 
 import {
