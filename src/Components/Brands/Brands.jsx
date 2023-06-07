@@ -15,7 +15,7 @@ const Brands = () => {
       <TotalBrandContainer>
         <BrandWorkedContainer>
           <NikeImgBrand
-            src=" /src/Components/Brands/LogoBrandsImages/Nike.png"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129645/LogoBrandsImages/Nike_ol7vri.png"
             alt="Nike"
           />
         </BrandWorkedContainer>
@@ -28,15 +28,15 @@ const Brands = () => {
           <ComingSoon>Coming soon</ComingSoon>
 
           <BrandsImg
-            src="/src/Components/Brands/LogoBrandsImages/Jordan.png"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129646/LogoBrandsImages/Jordan_haipfj.png"
             alt="Jordan"
           />
           <BrandsImg
-            src="/src/Components/Brands/LogoBrandsImages/Adidas.png"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129646/LogoBrandsImages/Adidas_fznjmj.png"
             alt="Adidas"
           />
           <BrandsImg
-            src="/src/Components/Brands/LogoBrandsImages/Fila.png"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129646/LogoBrandsImages/Fila_vzdcwr.png"
             alt="Fila"
           />
         </ContainerCommingSoon>

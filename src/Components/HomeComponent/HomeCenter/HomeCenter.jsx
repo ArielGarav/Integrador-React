@@ -55,7 +55,7 @@ const HomeCenter = () => {
             <FaArrowLeft />
           </Next>
           <ImageProductGallery
-            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129126/Colores%20Integrador%20React/galleria%20nike%20home/2_uvq0hv.png"
+            src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686129127/Colores%20Integrador%20React/galleria%20nike%20home/1_j7iuee.png"
             alt=""
           />
           <Next href="#image2" className="next">
