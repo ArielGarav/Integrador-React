@@ -17,7 +17,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
   const { currentUser } = useSelector((state) => state.user);
   return (
     <CheckoutDatosStyled>
-      <h2>Ingresá tus datos</h2>
+      <h2>Enter your data</h2>
       <Formik
         initialValues={checkoutInitialValues}
         validationSchema={checkoutValidationSchema}
@@ -35,7 +35,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
             navigate("/PedidoRealizado");
             dispatch(clearCart());
           } catch (error) {
-            alert("Error en la orden");
+            alert("Order Error");
           }
         }}
       >
@@ -46,7 +46,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
               name="name"
               type="text"
               id="nombre"
-              placeholder="Tu nombre"
+              placeholder="Your name"
             >
               Nombre
             </Input>
@@ -55,7 +55,8 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
               type="text"
               name="cellphone"
               id="celular"
-              placeholder="Tu celular"
+              placeholder="Your cellphone
+              "
             >
               Celular
             </Input>
@@ -64,7 +65,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
               type="text"
               name="location"
               id="localidad"
-              placeholder="Tu localidad"
+              placeholder="your town"
             >
               Localidad
             </Input>
@@ -73,13 +74,13 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
               type="text"
               name="address"
               id="dirección"
-              placeholder="Tu dirección"
+              placeholder="Your address"
             >
               Dirección
             </Input>
             <div>
               <Submit disabled={!cartItems.length}>
-                {isSubmitting ? <Loader /> : "Iniciar Pedido"}
+                {isSubmitting ? <Loader /> : "Start Order"}
               </Submit>
             </div>
           </Form>

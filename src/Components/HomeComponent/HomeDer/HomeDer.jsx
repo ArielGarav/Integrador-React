@@ -32,11 +32,11 @@ const HomeDer = () => {
         />
       </Slider>
       <SuggestionContainer>
-        <SuggestionHeading>Sugerencias</SuggestionHeading>
+        <SuggestionHeading>Suggestions</SuggestionHeading>
         <SuggestionText>129,99$</SuggestionText>
         <SuggestionSubheading>Men's Jordan 1 Mid</SuggestionSubheading>
         <hr />
-        <SuggestionSubheading>Colores Disponibles</SuggestionSubheading>
+        <SuggestionSubheading>Available Colours</SuggestionSubheading>
         <ColorContainer>
           <ColorImage
             src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686128718/Colores%20Integrador%20React/rojo_gdhvbp.jpg"
@@ -53,13 +53,12 @@ const HomeDer = () => {
         </ColorContainer>
         <hr />
         <SuggestionDescription>
-          Inspiradas en las AJ1 originales, las Air Jordan 1 Mid ofrecen a los
-          aficionados la oportunidad de seguir los pasos de MJ. El nuevo color
-          ribetea los materiales clásicos e infunde modernidad a un diseño
-          clásico.
+          Inspired by the original AJ1s, the Air Jordan 1 Mid offers fans the
+          opportunity to follow in MJ's footsteps. The new colorway trims the
+          classic materials and infuses modernity into a timeless design.
         </SuggestionDescription>
         <Link to="Jump">
-          <ButtonIzqContainer>Más</ButtonIzqContainer>
+          <ButtonIzqContainer>More</ButtonIzqContainer>
         </Link>
       </SuggestionContainer>
       <LineEdit />

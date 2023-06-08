@@ -19,7 +19,7 @@ const Login = () => {
   useRedirect("/");
   return (
     <LoginContainerStyled>
-      <h1>Iniciar Sesión</h1>
+      <h1>Login</h1>
       <Formik
         initialValues={loginInitialValues}
         validationSchema={loginValidationSchema}
@@ -40,9 +40,11 @@ const Login = () => {
           <LoginInput type="password" name="password" placeholder="Password" />
 
           <Link to="/register">
-            <LoginEmailStyled>¿No tenes cuenta? Crea una</LoginEmailStyled>
+            <LoginEmailStyled>
+              Don't have an account? create one here
+            </LoginEmailStyled>
           </Link>
-          <Submit type="button">Ingresar</Submit>
+          <Submit type="button">Log In</Submit>
         </Form>
       </Formik>
     </LoginContainerStyled>

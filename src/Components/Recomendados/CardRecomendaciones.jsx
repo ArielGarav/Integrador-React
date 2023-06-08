@@ -23,7 +23,7 @@ const CardRecomendaciones = ({ nombre, precio, img }) => {
         <ContentBx>
           <H2>{nombre}</H2>
           <Prices>
-            <H3>Precio :</H3>
+            <H3>Price :</H3>
             <H4>{formatPrice(precio)} </H4>
           </Prices>
         </ContentBx>

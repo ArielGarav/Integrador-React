@@ -13,7 +13,7 @@ const StarRating = () => {
 
   return (
     <div>
-      <p>Califica este producto:</p>
+      <p>Rate The Product :</p>
       {[1, 2, 3, 4, 5].map((value) => (
         <Star key={value} filled={value <= rating} onClick={value} />
       ))}

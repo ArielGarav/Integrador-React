@@ -101,6 +101,10 @@ export const CardButtonBuy = styled.button`
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
   ${CardAvailable}:hover & {
     top: 0;

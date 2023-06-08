@@ -12,7 +12,7 @@ import StarRating from "../../StartRating/StartRating";
 const HomeIzq = () => {
   return (
     <DatosContainer>
-      <h2>179.99 $</h2>
+      <h2>$179.99 </h2>
       <h1>Nike Air Max Plus III</h1>
       <PuntuacionContainer>
         <p>Men's Shoes</p>
@@ -20,19 +20,18 @@ const HomeIzq = () => {
       </PuntuacionContainer>
       <hr />
       <TextNikeAir>
-        Con la misma tecnología Tuned Air que sus predecesoras, las Nike Air Max
-        Plus III actualizan el diseño con detalles de plástico fusionado en la
-        parte superior y rinden homenaje a la icónica coloración degradada de
-        las originales.
+        With the same Tuned Air technology as their predecessors, the Nike Air
+        Max Plus III updates the design with fused plastic details on the upper
+        and pays homage to the iconic gradient colorway of the originals.
       </TextNikeAir>
       <SizeContainer>
-        <p>Tamaños Disponibles </p>
+        <p> Available Sizes </p>
       </SizeContainer>
       <div>
         <p> 35 - 36 - 37 - 38 - 39 - 40 - 41 - 42</p>
       </div>
       <Link to="Jump">
-        <ButtonIzqContainer>Comprar</ButtonIzqContainer>
+        <ButtonIzqContainer>Buy</ButtonIzqContainer>
       </Link>
     </DatosContainer>
   );

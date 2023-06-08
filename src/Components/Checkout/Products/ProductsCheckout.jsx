@@ -18,14 +18,14 @@ import {
 const ProductsCheckout = ({ cartItems, shippingCost, precio }) => {
   return (
     <ProductosContainerStyled>
-      <ProductsTitleStyled>Tu pedido</ProductsTitleStyled>
+      <ProductsTitleStyled>Your order</ProductsTitleStyled>
       <CardsWrapperStyled>
         {cartItems.length ? (
           cartItems.map((item) => (
             <CardProductCheckout key={item.id} {...item} />
           ))
         ) : (
-          <p>No tienes Productos</p>
+          <p>You have no Products</p>
         )}
       </CardsWrapperStyled>
       <PriceContainerStyled>
@@ -34,7 +34,7 @@ const ProductsCheckout = ({ cartItems, shippingCost, precio }) => {
           <span>{formatPrice(precio)}</span>
         </SubtotalStyled>
         <EnvioStyled>
-          <p>Envío:</p>
+          <p>Shipment:</p>
           <span>{formatPrice(shippingCost)}</span>
         </EnvioStyled>
         <HrStyled />

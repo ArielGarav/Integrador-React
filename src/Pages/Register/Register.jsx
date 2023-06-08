@@ -20,7 +20,7 @@ const Register = () => {
 
   return (
     <LoginContainerStyled>
-      <h1>Crea tu cuenta</h1>
+      <h1>Creat Your Account</h1>
       <Formik
         initialValues={registerInitialValues}
         validationSchema={registerValidationSchema}
@@ -43,14 +43,14 @@ const Register = () => {
         }}
       >
         <Form>
-          <LoginInput type="text" name="name" placeholder="Nombre" />
+          <LoginInput type="text" name="name" placeholder="Name" />
           <LoginInput type="text" name="email" placeholder="Email" />
           <LoginInput type="password" name="password" placeholder="Password" />
 
           <LoginEmailStyled to="/login">
-            <p>¿Ya tenes cuenta? Inicia sesión</p>
+            <p>Do you already have an account? Log in</p>
           </LoginEmailStyled>
-          <Submit type="button">Registrarte</Submit>
+          <Submit type="button">Register Now</Submit>
         </Form>
       </Formik>
     </LoginContainerStyled>

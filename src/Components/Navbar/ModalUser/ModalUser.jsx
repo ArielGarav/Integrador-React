@@ -27,7 +27,7 @@ const ModalUser = () => {
           transition={{ duration: 0.5 }}
           key="cart-user"
         >
-          <UsernameStyled>{`Hola ${currentUser?.nombre.toUpperCase()}`}</UsernameStyled>
+          <UsernameStyled>{`Hi ${currentUser?.nombre.toUpperCase()}`}</UsernameStyled>
           <HrStyled />
           <span
             onClick={() => {
@@ -35,7 +35,7 @@ const ModalUser = () => {
               dispatch(toggleHiddenMenu());
             }}
           >
-            Cerrar Sesion
+            Sign Off
           </span>
         </ModalContainerStyled>
       )}

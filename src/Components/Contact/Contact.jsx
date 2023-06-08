@@ -18,10 +18,10 @@ const Contact = () => {
     <>
       <TotalContactContainer>
         <ComuncationTextContact>
-          Puedes comunicarte con nosotros a través de nuestras redes Sociales
+          You can communicate with us through our social Networks.
         </ComuncationTextContact>
         <ContactContainer>
-          <TextContact>Contacto</TextContact>
+          <TextContact>Contact</TextContact>
           <LinksStlyedRedes
             href="https://www.whatsapp.com/?lang=es"
             target="_blank"

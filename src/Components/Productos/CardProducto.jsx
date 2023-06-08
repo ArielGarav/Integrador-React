@@ -14,6 +14,7 @@ import {
 import { formatPrice } from "../../utils/formatPrice";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart/cartSlice";
+import { FaShoppingCart } from "react-icons/fa";
 
 const CardProducto = ({ img, nombre, precio, id }) => {
   const dispatch = useDispatch();
@@ -30,10 +31,10 @@ const CardProducto = ({ img, nombre, precio, id }) => {
           <CardButtonBuy
             onClick={() => {
               dispatch(addToCart({ img, nombre, precio, id }));
-              toast.success("¡Producto agregado al carrito!");
+              toast.success("¡Product added to cart!");
             }}
           >
-            Agregar
+            Add To Cart <FaShoppingCart />
           </CardButtonBuy>
         </ContentBox>
       </CardAvailable>

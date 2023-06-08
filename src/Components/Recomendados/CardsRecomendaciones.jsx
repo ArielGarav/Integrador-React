@@ -8,7 +8,7 @@ const CardsRecomendaciones = () => {
   const recommended = useSelector((state) => state.recommended.recommended);
   return (
     <>
-      <TitleProdyCat>Recomendaciones</TitleProdyCat>
+      <TitleProdyCat>Recommendations</TitleProdyCat>
       <CardRecommendedContainerStyled>
         {recommended.map((product) => (
           <CardRecomendaciones key={product.id} {...product} />

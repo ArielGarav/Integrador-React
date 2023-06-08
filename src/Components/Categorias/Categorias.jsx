@@ -11,7 +11,7 @@ const Categorias = () => {
   return (
     <>
       <hr />
-      <TitleProdyCat>Selecciona tu Categoria</TitleProdyCat>
+      <TitleProdyCat>Select your Category</TitleProdyCat>
       <CategoriasContainer>
         {categories.map((category) => (
           <Categoria key={category.id} {...category} />

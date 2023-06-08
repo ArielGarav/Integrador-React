@@ -70,7 +70,7 @@ const ModalCart = () => {
 
             <MainContainerStyled>
               <TitleStyled>
-                <h1>Tus Productos</h1>
+                <h1>Your Products</h1>
                 <Increase onClick={() => dispatch(clearCart())} bgColor="black">
                   <IoMdTrash />
                 </Increase>
@@ -82,7 +82,7 @@ const ModalCart = () => {
                     <ModalCartCard key={item.id} {...item} />
                   ))
                 ) : (
-                  <p>No hay productos todavía</p>
+                  <p>No products yet</p>
                 )}
               </ProductsWrapperStyled>
             </MainContainerStyled>
@@ -93,7 +93,7 @@ const ModalCart = () => {
                 <span>{formatPrice(totalPrice)}</span>
               </SubtotalStyled>
               <EnvioStyled>
-                <p>Envio</p>
+                <p>Shipment:</p>
                 <span>{formatPrice(shippingCost)}</span>
               </EnvioStyled>
               <hr />
@@ -105,7 +105,7 @@ const ModalCart = () => {
               </TotalStyled>
               <ButtonContainerStyled>
                 <Submit onClick={() => navigate("Checkout")}>
-                  Iniciar pedido
+                  Start Order
                 </Submit>
               </ButtonContainerStyled>
             </PriceContainerStyled>

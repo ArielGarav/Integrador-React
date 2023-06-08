@@ -25,9 +25,9 @@ const PedidoRealizado = () => {
         />
         <ContainerInfoStyled>
           <TitleStyled>!</TitleStyled>
-          <p>Tu pedido fué realizado</p>
+          <p>Your request was Made</p>
         </ContainerInfoStyled>
-        <Button onClick={() => navigate("/Jump")}>Volver</Button>
+        <Button onClick={() => navigate("/Jump")}>Go Back</Button>
       </TextStyled>
     </div>
   );

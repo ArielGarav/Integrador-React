@@ -20,8 +20,8 @@ const Brands = () => {
           />
         </BrandWorkedContainer>
         <TextNike>
-          En estos momentos, nuestra empresa mantiene una relación de trabajo
-          únicamente con la marca Nike.
+          At this time, our company maintains a working relationship only with
+          the Nike brand.
         </TextNike>
 
         <ContainerCommingSoon>
