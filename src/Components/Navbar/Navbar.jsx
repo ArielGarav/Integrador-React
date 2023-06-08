@@ -88,7 +88,7 @@ const Navbar = () => {
                   }
                 >
                   <SpanUserNavStyled>
-                    {currentUser ? `${currentUser.nombre}` : "Inicia sesión"}
+                    {currentUser ? `${currentUser.nombre}` : "Login"}
                   </SpanUserNavStyled>
                   <FaUserAlt />
                 </UserContainerStyled>
