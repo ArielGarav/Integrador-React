@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   IconLogoMobile,
   LILinks,
@@ -15,30 +15,25 @@ import {
 import { FaUserAlt, FaHome, FaBars, FaTimes } from "react-icons/fa";
 import CartIcon from "./CartIcon/CartIcon";
 import ModalCart from "./ModalCart/ModalCart";
+import ModalUser from "./ModalUser/ModalUser";
 import { useNavigate } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleHiddenMenu } from "../../redux/user/userSlice";
-import ModalUser from "./ModalUser/ModalUser";
+
 const Navbar = () => {
   const currentUser = useSelector((state) => state.user.currentUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [click, setclick] = useState(false);
+
   const ChangeClick = () => {
     setclick(!click);
   };
-  const closeMenu = () => {
-    setclick(false);
-  };
-  useEffect(() => {
-    // Agregar evento de scroll al componente
-    window.addEventListener("scroll", closeMenu);
 
-    // Remover el evento de scroll al desmontar el componente
-    return () => {
-      window.removeEventListener("scroll", closeMenu);
-    };
-  }, []);
+  const handleMenuToggle = () => {
+    setclick(!click);
+  };
+
   return (
     <>
       <NavMenu>
@@ -46,12 +41,7 @@ const Navbar = () => {
           src="https://res.cloudinary.com/debcgjfr8/image/upload/v1686131091/Logo%20Styled%20Shoes/lcyezftq07oazsfbgwot.png"
           alt="logo"
         />
-        <NavContainer
-          click={click}
-          onClick={() => {
-            setclick(!click);
-          }}
-        >
+        <NavContainer click={click} onClick={handleMenuToggle}>
           <ModalCart />
           <ModalUser />
 
@@ -63,7 +53,6 @@ const Navbar = () => {
               <LILinks>
                 <NavLink to={"Brands"}>Brands</NavLink>
               </LILinks>
-
               <LILinks>
                 <NavLink to={"Contact"}>Contact</NavLink>
               </LILinks>
@@ -107,7 +96,7 @@ const Navbar = () => {
             </UlLinks>
           </div>
         </NavContainer>
-        <IconLogoMobile onClick={() => ChangeClick()}>
+        <IconLogoMobile onClick={ChangeClick}>
           {click ? <FaTimes /> : <FaBars />}
         </IconLogoMobile>
       </NavMenu>

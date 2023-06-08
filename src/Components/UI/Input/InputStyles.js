@@ -31,14 +31,10 @@ export const InputStyled = styled.input`
 
   ::placeholder {
     opacity: 60%;
+    color: white;
   }
-  -webkit-text-fill-color: white;
-
-  :-webkit-autofill,
-  :-webkit-autofill:hover,
-  :-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px inset;
-  }
+  color: white;
+  background-color: black;
 `;
 
 export const ErrorMessageStyled = styled.p`

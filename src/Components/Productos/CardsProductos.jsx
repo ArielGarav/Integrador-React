@@ -45,13 +45,13 @@ const CardsProductos = () => {
             secondary="true"
             disabled={limit === INITIAL_LIMIT}
           >
-            <span>Ver menos</span>
+            <span>See Less</span>
           </ButtonProducts>
           <ButtonProducts
             onClick={() => setLimit((prevLimit) => prevLimit + INITIAL_LIMIT)}
             disabled={totalProducts <= limit}
           >
-            Ver más
+            See More
           </ButtonProducts>
         </ButtonProductsContainerStyled>
       )}

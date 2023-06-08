@@ -9,22 +9,18 @@ export const LoginInputStyled = styled.input`
   width: 300px;
   padding: 1.5rem 2rem;
   color: white;
-  background-color: var(--gray-bg);
+  background-color: black; /* Actualización del fondo a negro */
   border-radius: 15px;
-  border: 1px solid white; /* Borde blanco por defecto */
+  border: 1px solid white;
   outline: none;
   caret-color: white;
 
   ::placeholder {
     opacity: 80%;
+    color: white;
   }
-  -webkit-text-fill-color: white;
-
-  :-webkit-autofill,
-  :-webkit-autofill:hover,
-  :-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px var(--gray-bg) inset;
-  }
+  color: white;
+  background-color: black;
 
   /* Estilos adicionales cuando hay error */
   ${({ isError }) =>
