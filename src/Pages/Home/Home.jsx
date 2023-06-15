@@ -3,6 +3,7 @@ import HomeIzq from "../../Components/HomeComponent/Homeizq/HomeIzq";
 import HomeCenter from "../../Components/HomeComponent/HomeCenter/HomeCenter";
 import { HomeContainer } from "./HomeStyles";
 import HomeDer from "../../Components/HomeComponent/HomeDer/HomeDer";
+import Shop from "../../Components/Shop/Shop";
 
 const Home = () => {
   return (

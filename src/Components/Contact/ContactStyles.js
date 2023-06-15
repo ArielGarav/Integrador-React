@@ -8,6 +8,9 @@ export const TotalContactContainer = styled.div`
   gap: 40px;
   height: 80vh;
   width: 100%;
+  @media (max-width: 600px) {
+    margin-top: 140px;
+  }
 `;
 export const ContactContainer = styled.div`
   display: flex;
@@ -40,4 +43,12 @@ export const LinksStlyedRedes = styled.a`
   font-weight: bold;
   color: #fff;
   text-align: center;
+`;
+export const LocationMap = styled.iframe`
+  width: 600px;
+  height: 450px;
+  border: 0px;
+  @media (max-width: 610px) {
+    width: 80%;
+  }
 `;

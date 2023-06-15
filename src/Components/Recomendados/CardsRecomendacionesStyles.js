@@ -139,17 +139,22 @@ export const H4 = styled.h4`
 
 export const Button = styled.button`
   display: inline-block;
-  padding: 15px 25px;
-  background: #fff;
-  border-radius: 10px;
-  margin-top: 10px;
+  padding: 10px 30px;
+  background: white;
+  border-radius: 30px;
+  margin-top: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   text-decoration: none;
   font-weight: 600;
-  color: #111;
+  color: #000000;
   opacity: 0;
   transform: translateY(50px);
   transition: 0.5s;
-  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 
   ${Card}:hover & {
     opacity: 1;
