@@ -8,7 +8,6 @@ import productsReducer from "./products/productsSlice";
 import cartReducer from "./cart/cartSlice";
 import userReducer from "./user/userSlice";
 import ordersReducer from "./orders/ordersSlice";
-import starReducer from "./../redux/Star/starSlice"; // Importa el slice "starSlice"
 import { persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import persistStore from "redux-persist/es/persistStore";
@@ -21,13 +20,12 @@ const reducers = combineReducers({
   cart: cartReducer,
   user: userReducer,
   orders: ordersReducer,
-  star: starReducer,
 });
 
 const persistConfig = {
   key: "root",
   storage,
-  whitelist: ["cart", "user", "star"],
+  whitelist: ["cart", "user"],
 };
 
 const persistedReducer = persistReducer(persistConfig, reducers);

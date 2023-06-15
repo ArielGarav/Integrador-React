@@ -4,7 +4,7 @@ export const products = [
     nombre: "Nike Air Max Plus III",
     category: "Men",
     precio: 179.99,
-    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686084520/Nike_Air_Max_Plus_III_tdcide.png",
+    img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686085007/Zapatillas%20Products/Hombres/hvzqvwiydo5nylldujvs.png",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const products = [
   },
   {
     id: 4,
-    nombre: "Nike Court Royale 2 Next Nature",
+    nombre: "Nike Court Royale 2 ",
     category: "Men",
     precio: 48.99,
     img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686085007/Zapatillas%20Products/Hombres/wqro3vpsjtfkiuqmxuzp.png",
@@ -82,7 +82,7 @@ export const products = [
   },
   {
     id: 12,
-    nombre: "Nike Air Max Alpha Trainer 4",
+    nombre: "Nike Air Max Alpha ",
     category: "Woman",
     precio: 79.99,
     img: "https://res.cloudinary.com/debcgjfr8/image/upload/v1686085467/Zapatillas%20Products/Mujeres/ttquadaq0uytttunqiix.png",

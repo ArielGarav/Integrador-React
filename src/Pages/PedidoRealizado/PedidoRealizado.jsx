@@ -27,7 +27,7 @@ const PedidoRealizado = () => {
           <TitleStyled>!</TitleStyled>
           <p>Your request was Made</p>
         </ContainerInfoStyled>
-        <Button onClick={() => navigate("/Jump")}>Go Back</Button>
+        <Button onClick={() => navigate("/")}>Go Back</Button>
       </TextStyled>
     </div>
   );
