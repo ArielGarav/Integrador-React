@@ -23,3 +23,9 @@ export const loginValidationSchema = Yup.object({
     .min(6, "minimo de caracteres 6")
     .required("ingrese una Contraseña"),
 });
+export const validateValidationSchema = Yup.object({
+  code: Yup.string()
+    .min(6, "Mínimo de caracteres: 6")
+    .max(6, "Máximo de caracteres: 6")
+    .required("Campo Requerido"),
+});

@@ -11,6 +11,8 @@ import PedidoRealizado from "../Pages/PedidoRealizado/PedidoRealizado.jsx";
 import Shop from "../Components/Shop/Shop";
 import Error404 from "../Components/Error404/Error404";
 import HeroLanding from "../Components/Hero/HeroLanding";
+import Validate from "../Pages/Validate/Validate";
+import Verified from "../Pages/Verified/Verified";
 
 function Routes() {
   return (
@@ -22,10 +24,11 @@ function Routes() {
           <Route path="Brands" element={<Brands />} />
           <Route path="Contact" element={<Contact />} />
           <Route path="Jump" element={<Shop />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/Verified?" element={<Verified />} />
+          <Route path="/login" element={<Login />} />{" "}
           <Route path="/register" element={<Register />} />
+          <Route path="/validate" element={<Validate />} />
           <Route path="/PedidoRealizado" element={<PedidoRealizado />} />
-
           <Route
             path="/checkout"
             element={
@@ -34,7 +37,6 @@ function Routes() {
               </ProtectedRoute>
             }
           />
-
           <Route path="*" element={<Error404 />}></Route>
         </ReactDomRoutes>
       </Layout>

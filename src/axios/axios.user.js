@@ -27,3 +27,16 @@ export const loginUser = async (email, password) => {
     return alert(error.response.data.errors[0].msg);
   }
 };
+export const verifyUser = async (email, code) => {
+  try {
+    const response = await axios.patch(`${BASE_URL}/auth/verify`, {
+      email,
+      code,
+    });
+    console.log("Usuario verificado");
+    return response.data;
+  } catch (error) {
+    console.log(error);
+    return alert(error.response.data.msg);
+  }
+};
