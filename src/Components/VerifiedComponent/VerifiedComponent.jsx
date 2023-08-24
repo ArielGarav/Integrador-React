@@ -8,6 +8,8 @@ import {
   IconWrapperStyled,
   VerifiedComponentContainerStyled,
   VerifiedComponentFormStyled,
+  VerifiedComponentDeniedContainer,
+  VerifiedComponentText,
 } from "./VerifiedComponentStyles";
 import { useNavigate } from "react-router-dom";
 
@@ -19,10 +21,12 @@ const VerifiedComponent = ({ doScroll }) => {
     <VerifiedComponentContainerStyled>
       <div>
         {currentUser?.verified ? (
-          <h1 className="title">Bienvenido Usuario Verificado</h1>
+          <h1>Bienvenido Usuario Verificado</h1>
         ) : (
-          <div>
-            <h1 className="title">Tenes que validar tu cuenta</h1>
+          <VerifiedComponentDeniedContainer>
+            <VerifiedComponentText>
+              Tenes que validar tu cuenta
+            </VerifiedComponentText>
             <VerifiedComponentFormStyled>
               <Button
                 onClick={() => {
@@ -33,7 +37,7 @@ const VerifiedComponent = ({ doScroll }) => {
                 Validar usuario
               </Button>
             </VerifiedComponentFormStyled>
-          </div>
+          </VerifiedComponentDeniedContainer>
         )}
       </div>
     </VerifiedComponentContainerStyled>

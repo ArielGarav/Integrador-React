@@ -10,6 +10,16 @@ export const VerifiedComponentContainerStyled = styled.div`
     margin-bottom: 2rem;
   }
 `;
+export const VerifiedComponentText = styled.h1`
+  font-size: 50px;
+`;
+export const VerifiedComponentDeniedContainer = styled.form`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+`;
 
 export const VerifiedComponentFormStyled = styled.form`
   display: flex;

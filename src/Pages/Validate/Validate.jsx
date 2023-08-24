@@ -3,7 +3,11 @@ import { useNavigate } from "react-router-dom";
 
 import LoginInput from "../../components/UI/LoginInput/LoginInput";
 
-import { Form, ValidateContainerStyled } from "./ValidateStyles";
+import {
+  Form,
+  ValidateContainerStyled,
+  ValidateContainerText,
+} from "./ValidateStyles";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser, setVerified } from "../../redux/user/userSlice";
 import Submit from "../../Components/UI/Submit/Submit";
@@ -21,12 +25,13 @@ const Validate = () => {
       navigate("/login");
     } else if (currentUser.verified) {
       navigate("/Verified?");
+      console.log(currentUser.verified);
     }
   }, [currentUser, navigate]);
 
   return (
     <ValidateContainerStyled>
-      <h1>Validar cuenta</h1>
+      <ValidateContainerText>Validar cuenta</ValidateContainerText>
       <Formik
         initialValues={validateInitialValues}
         validationSchema={validateValidationSchema}

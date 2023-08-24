@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { Form as FormikForm } from 'formik';
+import styled from "styled-components";
+import { Form as FormikForm } from "formik";
 
 export const ValidateContainerStyled = styled.div`
   display: flex;
@@ -8,6 +8,10 @@ export const ValidateContainerStyled = styled.div`
   justify-content: center;
   gap: 20px;
   margin-top: 20px;
+  height: 60vh;
+`;
+export const ValidateContainerText = styled.h1`
+  font-size: 42px;
 `;
 
 export const Form = styled(FormikForm)`
