@@ -8,7 +8,7 @@ import { registerInitialValues } from "../../formik/initialValues";
 import { registerValidationSchema } from "../../formik/validationSchema";
 import { createUser } from "../../axios/axios.user";
 import { setCurrentUser } from "../../redux/user/userSlice";
-import LoginInput from "../../components/UI/LoginInput/LoginInput";
+import LoginInput from "../../Components/UI/LoginInput/LoginInput";
 import { useRedirect } from "../../hooks/useRedirect";
 
 const Register = () => {
