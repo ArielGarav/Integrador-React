@@ -10,7 +10,7 @@ import { useRedirect } from "../../hooks/useRedirect";
 import { loginValidationSchema } from "../../formik/validationSchema";
 import { loginUser } from "../../axios/axios.user";
 import { setCurrentUser } from "../../redux/user/userSlice";
-import LoginInput from "../../components/UI/LoginInput/LoginInput";
+import LoginInput from "../../Components/UI/LoginInput/LoginInput";
 import Submit from "../../Components/UI/Submit/Submit";
 
 const Login = () => {
