@@ -1,6 +1,6 @@
 import React from "react";
 import { Formik } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import { Form, LoginContainerStyled, LoginEmailStyled } from "./LoginStyles";
 import { useDispatch } from "react-redux";
@@ -15,6 +15,7 @@ import Submit from "../../Components/UI/Submit/Submit";
 
 const Login = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   useRedirect("/Verified?");
   return (
     <LoginContainerStyled>
@@ -24,6 +25,8 @@ const Login = () => {
         validationSchema={loginValidationSchema}
         onSubmit={async (values) => {
           const user = await loginUser(values.email, values.password);
+
+          console.log(user);
           if (user) {
             dispatch(
               setCurrentUser({
@@ -32,6 +35,13 @@ const Login = () => {
               })
             );
           }
+          // if (user) {
+          //   dispatch(setCurrentUser(user)); // Guarda el usuario en el almacenamiento Redux.
+          //   if (user.usuario.verified) {
+          //     console.log("sexo");
+          //     navigate("/Verified");
+          //   }
+          // }
         }}
       >
         <Form>

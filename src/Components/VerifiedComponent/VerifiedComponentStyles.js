@@ -20,6 +20,13 @@ export const VerifiedComponentDeniedContainer = styled.form`
   align-items: center;
   height: 60vh;
 `;
+export const VerifiedComponentAcceptContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+`;
 
 export const VerifiedComponentFormStyled = styled.form`
   display: flex;

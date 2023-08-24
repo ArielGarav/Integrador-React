@@ -5,6 +5,7 @@ import {
   fetchOrderStart,
   fetchOrderSuccess,
 } from "../redux/orders/ordersSlice";
+import { BASE_URL } from "../utils";
 
 export const getOrders = async (dispatch, currentUser) => {
   dispatch(fetchOrderStart());
@@ -16,6 +17,7 @@ export const getOrders = async (dispatch, currentUser) => {
       },
     });
     if (orders) {
+      console.log("funca manito");
       dispatch(fetchOrderSuccess(orders.data.data));
     }
   } catch (error) {
@@ -26,17 +28,25 @@ export const getOrders = async (dispatch, currentUser) => {
   }
 };
 
-export const createOrder = async (order, dispatch, currentUser) => {
+export const createOrder = async (order, currentUser, dispatch) => {
+  console.log(order);
   try {
-    const response = await axios.post(`${BASE_URL}/orders`, order, {
-      headers: {
-        "x-token": currentUser.token,
-      },
-    });
+    const response = await axios.post(
+      `${BASE_URL}/orders`,
+
+      order,
+      {
+        headers: {
+          "x-token": currentUser.token,
+        },
+      }
+    );
     if (response) {
       getOrders(dispatch, currentUser);
+      console.log(response);
     }
   } catch (error) {
+    console.log(error);
     dispatch(createOrderFail());
   }
 };

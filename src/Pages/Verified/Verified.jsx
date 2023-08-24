@@ -14,7 +14,6 @@ function Verified() {
       navigate("/login");
     }
   }, [currentUser, navigate]);
-
   return (
     <VerifiedWrapper>
       <VerifiedComponent />

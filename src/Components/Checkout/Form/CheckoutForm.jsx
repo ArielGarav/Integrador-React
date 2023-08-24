@@ -11,7 +11,7 @@ import { createOrder } from "../../../axios/axios-orders";
 import { clearCart } from "../../../redux/cart/cartSlice";
 import Loader from "../../UI/Loader/Loader";
 
-const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
+const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { currentUser } = useSelector((state) => state.user);
@@ -29,12 +29,18 @@ const CheckoutForm = ({ cartItems, shippingCost, precio }) => {
             total: precio + shippingCost,
             shippingDetails: { ...values },
           };
+          setLoading(true);
 
           try {
-            await createOrder(orderData, dispatch, currentUser);
+            await createOrder(orderData, currentUser, dispatch);
+            setLoading(false);
+
             navigate("/PedidoRealizado");
+
             dispatch(clearCart());
           } catch (error) {
+            setLoading(true);
+
             alert("Order Error");
           }
         }}

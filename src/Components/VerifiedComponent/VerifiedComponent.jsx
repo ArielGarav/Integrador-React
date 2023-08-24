@@ -9,6 +9,7 @@ import {
   VerifiedComponentContainerStyled,
   VerifiedComponentFormStyled,
   VerifiedComponentDeniedContainer,
+  VerifiedComponentAcceptContainer,
   VerifiedComponentText,
 } from "./VerifiedComponentStyles";
 import { useNavigate } from "react-router-dom";
@@ -19,9 +20,11 @@ const VerifiedComponent = ({ doScroll }) => {
 
   return (
     <VerifiedComponentContainerStyled>
-      <div>
+      <VerifiedComponentAcceptContainer>
         {currentUser?.verified ? (
-          <h1>Bienvenido Usuario Verificado</h1>
+          <VerifiedComponentText>
+            Bienvenido Usuario Verificado
+          </VerifiedComponentText>
         ) : (
           <VerifiedComponentDeniedContainer>
             <VerifiedComponentText>
@@ -39,7 +42,7 @@ const VerifiedComponent = ({ doScroll }) => {
             </VerifiedComponentFormStyled>
           </VerifiedComponentDeniedContainer>
         )}
-      </div>
+      </VerifiedComponentAcceptContainer>
     </VerifiedComponentContainerStyled>
   );
 };

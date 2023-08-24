@@ -27,7 +27,7 @@ const ModalUser = () => {
           transition={{ duration: 0.5 }}
           key="cart-user"
         >
-          <UsernameStyled>{`Hi ${currentUser?.nombre.toUpperCase()}`}</UsernameStyled>
+          <UsernameStyled>{`Hi ${currentUser?.nombre}`}</UsernameStyled>
           <HrStyled />
           <span
             onClick={() => {

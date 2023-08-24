@@ -24,7 +24,7 @@ function Routes() {
           <Route path="Brands" element={<Brands />} />
           <Route path="Contact" element={<Contact />} />
           <Route path="Jump" element={<Shop />} />
-          <Route path="/Verified?" element={<Verified />} />
+          <Route path="/Verified" element={<Verified />} />
           <Route path="/login" element={<Login />} />{" "}
           <Route path="/register" element={<Register />} />
           <Route path="/validate" element={<Validate />} />
