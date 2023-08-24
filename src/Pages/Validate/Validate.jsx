@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
-import LoginInput from "../../components/UI/LoginInput/LoginInput";
+import LoginInput from "../../Components/UI/LoginInput/LoginInput";
 
 import {
   Form,
