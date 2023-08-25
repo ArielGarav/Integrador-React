@@ -34,6 +34,13 @@ const shadowAnimation = keyframes`
 `;
 
 // Estilos para los componentes usando Styled Components
+const ContainerStyled = styled.div`
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const Wrapper = styled.div`
   width: 200px;
   height: 60px;
@@ -91,14 +98,16 @@ const ThirdShadow = styled(Shadow)`
 // Componente principal
 const AnimatedCircles = () => {
   return (
-    <Wrapper>
-      <Circle />
-      <SecondCircle />
-      <ThirdCircle />
-      <Shadow />
-      <SecondShadow />
-      <ThirdShadow />
-    </Wrapper>
+    <ContainerStyled>
+      <Wrapper>
+        <Circle />
+        <SecondCircle />
+        <ThirdCircle />
+        <Shadow />
+        <SecondShadow />
+        <ThirdShadow />
+      </Wrapper>
+    </ContainerStyled>
   );
 };
 

@@ -33,13 +33,14 @@ const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
 
           try {
             await createOrder(orderData, currentUser, dispatch);
-            setLoading(false);
+            // setLoading(false);
 
-            navigate("/PedidoRealizado");
+            // navigate("/PedidoRealizado");
 
-            dispatch(clearCart());
-          } catch (error) {
+            // dispatch(clearCart());
             setLoading(true);
+          } catch (error) {
+            // setLoading(true);
 
             alert("Order Error");
           }
