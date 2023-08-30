@@ -11,6 +11,5 @@ export const AboutParrafo = styled.p`
   color: #a7a7a7;
   font-size: 24px;
   line-height: 1.5;
-  text-align: justify;
   margin: 30px 50px;
 `;
