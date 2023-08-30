@@ -44,9 +44,10 @@ const Validate = () => {
           try {
             const response = await verifyUser(values.email, values.code);
 
+            // Dentro del bloque try en el onSubmit de Validate.js
             if (response.verified) {
               dispatch(setVerified());
-              navigate("/Verified");
+              navigate("/login"); // Cambia esto a la página "login" si es necesario
             } else {
               setFieldError("code", response.error || "Código incorrecto");
             }

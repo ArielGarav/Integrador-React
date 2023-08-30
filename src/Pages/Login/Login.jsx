@@ -16,7 +16,6 @@ import Submit from "../../Components/UI/Submit/Submit";
 const Login = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  useRedirect("/Verified?");
   return (
     <LoginContainerStyled>
       <h1>Login</h1>
@@ -34,14 +33,14 @@ const Login = () => {
                 token: user.token,
               })
             );
+            // Redirige al componente "verified" después del inicio de sesión exitoso si está verificado
+            if (user.usuario.verified) {
+              navigate("/verified"); // Cambia esto a la página "verified" si es necesario
+            } else {
+              // Si no está verificado, redirige nuevamente a la página de validación
+              navigate("/validate"); // Cambia esto a la página "validate" si es necesario
+            }
           }
-          // if (user) {
-          //   dispatch(setCurrentUser(user)); // Guarda el usuario en el almacenamiento Redux.
-          //   if (user.usuario.verified) {
-          //     console.log("sexo");
-          //     navigate("/Verified");
-          //   }
-          // }
         }}
       >
         <Form>
