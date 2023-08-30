@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Formik } from "formik";
 import Submit from "../../Components/UI/Submit/Submit";
 import { Form, LoginContainerStyled, LoginEmailStyled } from "./RegisterStyles";
@@ -10,12 +10,14 @@ import { createUser } from "../../axios/axios.user";
 import { setCurrentUser } from "../../redux/user/userSlice";
 import LoginInput from "../../Components/UI/LoginInput/LoginInput";
 import { useRedirect } from "../../hooks/useRedirect";
+import AnimatedCircles from "../../Components/UI/Loader/LoaderBuy/AnimatedCircles";
 
 const Register = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { state } = useLocation();
   const currentUser = useSelector((state) => state.user.currentUser);
+  const [isLoading, setIsLoading] = useState(false);
 
   // Verificar si el usuario ya está autenticado y no está verificado
   if (currentUser && !currentUser.verified) {
@@ -27,9 +29,13 @@ const Register = () => {
 
   const handleRegistration = async (values, actions) => {
     // Intenta registrar al usuario, por ejemplo, llamando a una API
+    setIsLoading(true);
+
     try {
       const user = await createUser(values.name, values.email, values.password);
       // Acciones después del registro exitoso
+      setIsLoading(false);
+
       actions.resetForm();
       console.log(user);
 
@@ -47,6 +53,8 @@ const Register = () => {
       }
     } catch (error) {
       // Manejo de errores en caso de que el registro falle
+      setIsLoading(false);
+
       console.error(error);
     }
   };
@@ -68,7 +76,11 @@ const Register = () => {
             <p>Do you already have an account? Log in</p>
           </LoginEmailStyled>
 
-          <Submit type="submit">Register Now</Submit>
+          {isLoading ? (
+            <AnimatedCircles /> // Aquí se muestra tu componente de loader personalizado
+          ) : (
+            <Submit type="submit">Register Now</Submit>
+          )}
         </Form>
       </Formik>
     </LoginContainerStyled>
