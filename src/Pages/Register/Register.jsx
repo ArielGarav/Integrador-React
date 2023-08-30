@@ -37,7 +37,6 @@ const Register = () => {
       setIsLoading(false);
 
       actions.resetForm();
-      console.log(user);
 
       // Actualiza el estado del usuario si el registro fue exitoso
       if (user) {
@@ -49,7 +48,7 @@ const Register = () => {
         );
 
         // Redirige a la página deseada después del registro exitoso
-        navigate("/validate"); // Cambia esto a la página "validate" si es necesario
+        navigate("/validate");
       }
     } catch (error) {
       // Manejo de errores en caso de que el registro falle

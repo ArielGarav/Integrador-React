@@ -22,7 +22,6 @@ const Validate = () => {
 
   useEffect(() => {
     if (!currentUser.verified) {
-      // Cambia el condicional a !currentUser.verified
       navigate("/validate");
     }
   }, [currentUser, navigate]);
@@ -36,10 +35,9 @@ const Validate = () => {
           try {
             const response = await verifyUser(values.email, values.code);
 
-            // Dentro del bloque try en el onSubmit de Validate.js
             if (response.verified) {
               dispatch(setVerified());
-              navigate("/login"); // Cambia esto a la página "login" si es necesario
+              navigate("/login");
             } else {
               setFieldError("code", response.error || "Código incorrecto");
             }

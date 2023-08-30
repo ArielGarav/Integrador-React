@@ -35,10 +35,10 @@ const Login = () => {
             );
             // Redirige al componente "verified" después del inicio de sesión exitoso si está verificado
             if (user.usuario.verified) {
-              navigate("/verified"); // Cambia esto a la página "verified" si es necesario
+              navigate("/verified");
             } else {
               // Si no está verificado, redirige nuevamente a la página de validación
-              navigate("/validate"); // Cambia esto a la página "validate" si es necesario
+              navigate("/validate");
             }
           }
         }}
