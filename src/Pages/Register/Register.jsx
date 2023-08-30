@@ -77,7 +77,7 @@ const Register = () => {
           </LoginEmailStyled>
 
           {isLoading ? (
-            <AnimatedCircles /> // Aquí se muestra tu componente de loader personalizado
+            <AnimatedCircles />
           ) : (
             <Submit type="submit">Register Now</Submit>
           )}

@@ -20,14 +20,6 @@ const Validate = () => {
   const dispatch = useDispatch();
   const currentUser = useSelector((state) => state.user.currentUser);
 
-  // useEffect(() => {
-  //   if (!currentUser) {
-  //     navigate("/login");
-  //   } else if (currentUser.verified) {
-  //     navigate("/Verified");
-  //     console.log(currentUser.verified);
-  //   }
-  // }, [currentUser, navigate]);
   useEffect(() => {
     if (!currentUser.verified) {
       // Cambia el condicional a !currentUser.verified
@@ -53,16 +45,10 @@ const Validate = () => {
             }
           } catch (error) {
             console.error(error);
-            // Maneja otros errores aquí
           } finally {
             setSubmitting(false);
           }
         }}
-
-        // if (data === currentUser) {
-        //   console.log("sexo");
-        // }
-        // console.log(data);
       >
         <Form>
           <LoginInput
