@@ -54,7 +54,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
               id="nombre"
               placeholder="Your name"
             >
-              Nombre
+              Name
             </Input>
             <Input
               htmlFor="celular"
@@ -64,7 +64,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
               placeholder="Your cellphone
               "
             >
-              Celular
+              Cellphone
             </Input>
             <Input
               htmlFor="localidad"
@@ -73,7 +73,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
               id="localidad"
               placeholder="your town"
             >
-              Localidad
+              Location
             </Input>
             <Input
               htmlFor="direccion"
@@ -82,7 +82,7 @@ const CheckoutForm = ({ cartItems, shippingCost, precio, setLoading }) => {
               id="dirección"
               placeholder="Your address"
             >
-              Dirección
+              Address
             </Input>
             <div>
               <Submit disabled={!cartItems.length}>
