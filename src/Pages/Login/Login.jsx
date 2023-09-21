@@ -25,7 +25,6 @@ const Login = () => {
         onSubmit={async (values) => {
           const user = await loginUser(values.email, values.password);
 
-          console.log(user);
           if (user) {
             dispatch(
               setCurrentUser({
